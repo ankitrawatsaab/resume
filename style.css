@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 2, 44);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(23, 23, 95);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Vertically center the navigation items */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px; /* Decrease margin for smaller screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+nav ul li a:hover {
+    color: rgb(148, 148, 231);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Adjust height to fit content */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 10px; /* Add space between items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+}
+
+.left{
+    font-size: 1.5rem;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    
+}
+
+.first-section > div{
+    width: 30%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.left-section{
+    font-size: 2.5rem;
+}
+
+.left-section .buttons{
+    padding: 30px 0;
+}
+
+.left-section .btn{
+    padding: 10px 20px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.right-section img{
+    width: 100%;
+    max-width: 400px;
+}
+
+.purple{
+    color: rgb(170, 116, 221);
+}
+
+main hr{
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 40px auto;
+    max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .first-section {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin: 60px 0; /* Adjusted margin for smaller screens */
+    }
+
+    .first-section > div {
+        width: 90%; /* Adjusted width for smaller screens */
+        margin-bottom: 30px; /* Add spacing between sections for smaller screens */
+    }
+
+    .left-section {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .left-section .buttons {
+        padding: 20px 0; /* Adjusted padding for smaller screens */
+    }
+
+    .left-section .btn {
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    main hr {
+        margin: 30px auto; /* Adjusted margin for smaller screens */
+    }
+}
+
+.heading-1 {
+            border: 2px solid white;
+            background-color: rgb(23, 23, 95);
+            width: 100%;
+            max-width: 600px; /* Adjusted max-width for smaller screens */
+            margin: 0 auto; /* Center align for smaller screens */
+            text-align: center; /* Center align text for smaller screens */
+            padding: 10px;
+            border-radius: 40px; /* Adjusted padding for smaller screens */
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        .p-1 {
+            font-size: 2rem; /* Adjusted font size for smaller screens */
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .p-2 {
+            width: 90%; /* Adjusted width for smaller screens */
+            max-width: 700px; /* Adjusted max-width for smaller screens */
+            margin: 0 auto; /* Center align for smaller screens */
+            font-size: 1.3rem;
+            margin-top: 20px;
+        }
+
+        .purple {
+            color: rgb(170, 116, 221);
+        }
+
+        .information {
+            display: flex;
+            flex-wrap: wrap; /* Wrap items for smaller screens */
+            justify-content: center; /* Center align for smaller screens */
+            margin-top: 40px;
+        }
+
+        .education, .hobby {
+            width: 90%; /* Adjusted width for smaller screens */
+            max-width: 300px; /* Adjusted max-width for smaller screens */
+            margin: 0 10px; /* Adjusted margin for smaller screens */
+        }
+
+        .small-conatiner1, .small-conatiner2 {
+            font-size: 1.5rem; /* Adjusted font size for smaller screens */
+            margin-bottom: 10px; /* Adjusted margin for smaller screens */
+        }
+
+        .point {
+            font-size: 1.1rem; /* Adjusted font size for smaller screens */
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px auto; /* Adjusted margin for smaller screens */
+            max-width: 80%; /* Set max-width for smaller screens */
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .p-1 {
+                font-size: 1.8rem; /* Adjusted font size for smaller screens */
+            }
+
+            .p-2 {
+                font-size: 1rem; /* Adjusted font size for smaller screens */
+            }
+
+            .information {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                align-items: center; /* Center align items for smaller screens */
+            }
+
+            .education, .hobby {
+                width: 90%; /* Adjusted width for smaller screens */
+                max-width: none; /* Removed max-width for smaller screens */
+                margin: 0 auto 20px; /* Adjusted margin for smaller screens */
+            }
+        }
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+    justify-content: center; /* Center align for smaller screens */
+    margin-top: 40px;
+}
+
+.frontend, .backend {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 300px; /* Adjusted max-width for smaller screens */
+    margin: 0 10px; /* Adjusted margin for smaller screens */
+}
+
+.small-conatiner1, .small-conatiner2 {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+}
+
+.p-3 {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 800px; /* Adjusted max-width for smaller screens */
+    margin: 0 auto; /* Center align for smaller screens */
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .p-3 {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    .skills {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items for smaller screens */
+    }
+
+    .frontend, .backend {
+        width: 90%; /* Adjusted width for smaller screens */
+        max-width: none; /* Removed max-width for smaller screens */
+        margin: 0 auto 20px; /* Adjusted margin for smaller screens */
+    }
+}
+
+
+.project {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+.project > div {
+    flex: 1 1 auto;
+    max-width: 300px;
+    margin: 10px;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.tutor,
+.netflix,
+.bussiness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btnn {
+    padding: 10px 20px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .project > div {
+        max-width: 100%;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.contact div {
+    text-align: center;
+}
+
+.contact .icon {
+    color: yellow;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.ques {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ques button {
+    padding: 10px 20px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    gap: 20px;
+    color: yellow;
+    margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer > div {
+    flex: 1;
+    text-align: center;
+}
+
+.footer .f-1 ul div,
+.footer .f-2 div,
+.footer .f-4 div {
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.footer .f-1 ul li a,
+.footer .f-2 span,
+.footer .f-4 span {
+    font-size: 1.3rem;
+    color: skyblue;
+}
+
+.footer .f-1 ul li a:hover,
+.footer .f-6 ul li a:hover {
+    color: rgb(148, 148, 231);
+}
+
+.footer .f-2-icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+    color: yellow;
+}
+
+.lower-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
+}
+
+.f-4 input[type="search"] {
+    width: calc(100% - 90px); /* Adjusted width */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer > div {
+        flex: 1 0 100%; /* Adjusted flex basis for smaller screens */
+        margin-bottom: 20px; /* Added margin bottom for spacing */
+    }
+    .lower-footer {
+        margin-top: 20px; /* Added margin top for spacing */
+    }
+}
